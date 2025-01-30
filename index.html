@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
-<title></title>
+<title>R & R Sustainable Solutions Pvt Ltd.</title>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="website" property="og:type"/>
 <meta content="" property="og:description"/>
@@ -34,9 +34,8 @@
 		}
 
 		.bee-row-2,
-		.bee-row-4,
-		.bee-row-6 {
-			background-size: cover
+		.bee-row-8 .bee-row-content {
+			background-size: auto
 		}
 
 		body {
@@ -81,20 +80,33 @@
 			transform: scale(1, -1)
 		}
 
-		.bee-row-content .bee-col-w5 {
-			flex-basis: 41.6666666667%
-		}
-
 		.bee-row-content .bee-col-w6 {
 			flex-basis: 50%
 		}
 
-		.bee-row-content .bee-col-w7 {
-			flex-basis: 58.3333333333%
-		}
-
 		.bee-row-content .bee-col-w12 {
 			flex-basis: 100%
+		}
+
+		.bee-background-video-container {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			pointer-events: none
+		}
+
+		.bee-background-video-container video {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100vw;
+			height: 56.25vw;
+			min-height: 100vh;
+			min-width: 177.77vh
 		}
 
 		.bee-button a,
@@ -103,19 +115,27 @@
 			text-decoration: none
 		}
 
-		.bee-divider {
+		.bee-divider,
+		.bee-image {
 			overflow: auto
 		}
 
-		.bee-divider .center {
+		.bee-divider .center,
+		.bee-image .bee-center {
 			margin: 0 auto
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 {
+			width: 100%
 		}
 
 		.bee-row-3 .bee-row-content,
 		.bee-row-4 .bee-row-content,
 		.bee-row-5 .bee-row-content,
 		.bee-row-6 .bee-row-content,
-		.bee-row-7 .bee-row-content {
+		.bee-row-7 .bee-row-content,
+		.bee-row-8 .bee-row-content,
+		.bee-row-9 .bee-row-content {
 			border-radius: 0;
 			background-repeat: no-repeat;
 			color: #000000
@@ -129,6 +149,11 @@
 		.bee-icon .bee-content {
 			display: flex;
 			align-items: center
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
 		}
 
 		.bee-menu .bee-hamburger-controls {
@@ -170,20 +195,19 @@
 		}
 
 		.bee-row-1 .bee-row-content,
-		.bee-row-10 .bee-row-content,
-		.bee-row-9 .bee-row-content {
+		.bee-row-11 .bee-row-content,
+		.bee-row-12 .bee-row-content {
 			background-repeat: no-repeat;
 			color: #000000
 		}
 
 		.bee-row-1 .bee-col-1 .bee-block-1,
-		.bee-row-2 .bee-col-2 .bee-block-1,
+		.bee-row-10 .bee-col-1 .bee-block-1,
 		.bee-row-3 .bee-col-1 .bee-block-1,
-		.bee-row-4 .bee-col-1 .bee-block-1,
-		.bee-row-5 .bee-col-1 .bee-block-1,
 		.bee-row-6 .bee-col-1 .bee-block-1,
 		.bee-row-7 .bee-col-1 .bee-block-1,
-		.bee-row-8 .bee-col-1 .bee-block-1 {
+		.bee-row-8 .bee-col-1 .bee-block-1,
+		.bee-row-9 .bee-col-1 .bee-block-1 {
 			padding: 10px;
 			text-align: center;
 			width: 100%
@@ -197,12 +221,12 @@
 		}
 
 		.bee-row-1 .bee-col-2 .bee-block-2,
-		.bee-row-10 .bee-col-1 .bee-block-1 {
+		.bee-row-12 .bee-col-1 .bee-block-1,
+		.bee-row-6 .bee-col-1 .bee-block-2 {
 			padding: 10px
 		}
 
 		.bee-row-2 {
-			background-image: url(images/main.jpg);
 			background-repeat: no-repeat
 		}
 
@@ -213,7 +237,7 @@
 		}
 
 		.bee-row-2 .bee-col-1 {
-			padding: 35px 25px 40px
+			padding: 35px
 		}
 
 		.bee-row-2 .bee-col-1 .bee-block-1 {
@@ -234,67 +258,67 @@
 			text-align: center
 		}
 
-		.bee-row-2 .bee-col-2 {
-			padding-left: 25px;
-			padding-right: 25px
-		}
-
 		.bee-row-3,
+		.bee-row-4,
 		.bee-row-5,
-		.bee-row-7 {
+		.bee-row-6,
+		.bee-row-7,
+		.bee-row-9 {
 			background-repeat: no-repeat
 		}
 
-		.bee-row-11 .bee-col-1,
+		.bee-row-10 .bee-col-1,
+		.bee-row-13 .bee-col-1,
 		.bee-row-3 .bee-col-1,
+		.bee-row-4 .bee-col-1,
+		.bee-row-4 .bee-col-2,
 		.bee-row-5 .bee-col-1,
-		.bee-row-6 .bee-col-1,
 		.bee-row-7 .bee-col-1,
-		.bee-row-8 .bee-col-1 {
+		.bee-row-8 .bee-col-1,
+		.bee-row-9 .bee-col-1 {
 			padding-bottom: 5px;
 			padding-top: 5px
 		}
 
-		.bee-row-4 {
-			background-image: url(images/first.jpg);
-			background-repeat: no-repeat
+		.bee-row-4 .bee-col-2 .bee-block-1 {
+			padding: 45px
 		}
 
-		.bee-row-4 .bee-row-content,
-		.bee-row-6 .bee-row-content {
-			background-size: auto
+		.bee-row-6 .bee-col-1 {
+			padding: 10px 30px 5px 40px
 		}
 
-		.bee-row-6 {
+		.bee-row-8 {
 			background-image: url(images/stuble.jpg);
-			background-repeat: no-repeat
+			background-repeat: no-repeat;
+			background-size: cover
 		}
 
 		.bee-row-10,
-		.bee-row-8,
-		.bee-row-9 {
+		.bee-row-11,
+		.bee-row-12 {
 			background-color: #0b4341;
 			background-repeat: no-repeat
 		}
 
-		.bee-row-8 .bee-row-content {
+		.bee-row-10 .bee-row-content {
 			background-color: #0b4341;
 			background-repeat: no-repeat;
 			color: #000000
 		}
 
-		.bee-row-9 .bee-col-1 {
+		.bee-row-11 .bee-col-1 {
 			background-color: #0b4341;
 			padding: 15px 25px
 		}
 
-		.bee-row-11,
-		.bee-row-11 .bee-row-content {
+		.bee-row-13,
+		.bee-row-13 .bee-row-content {
 			background-color: #ffffff;
 			background-repeat: no-repeat
 		}
 
-		.bee-row-9 .bee-col-1 .bee-block-1 {
+		.bee-row-11 .bee-col-1 .bee-block-1 {
 			color: #ffffff;
 			font-family: inherit;
 			font-size: 18px;
@@ -302,21 +326,32 @@
 			text-align: right
 		}
 
-		.bee-row-9 .bee-col-1 .bee-block-2 {
+		.bee-row-11 .bee-col-1 .bee-block-2 {
 			padding: 15px 10px;
 			text-align: right
 		}
 
-		.bee-row-11 .bee-row-content {
+		.bee-row-13 .bee-row-content {
 			color: #000000
 		}
 
-		.bee-row-11 .bee-col-1 .bee-block-1 {
+		.bee-row-13 .bee-col-1 .bee-block-1 {
 			color: #1e0e4b;
 			font-family: Inter, sans-serif;
 			font-size: 15px;
 			padding-bottom: 5px;
 			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-1 h1 {
+			color: #0b4341;
+			direction: ltr;
+			font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+			font-size: 48px;
+			font-weight: 400;
+			letter-spacing: normal;
+			line-height: 120%;
 			text-align: center
 		}
 
@@ -331,17 +366,6 @@
 			text-align: left
 		}
 
-		.bee-row-2 .bee-col-1 .bee-block-1 h1 {
-			color: #0b4341;
-			direction: ltr;
-			font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
-			font-size: 48px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
-		}
-
 		.bee-row-2 .bee-col-1 .bee-block-3 {
 			color: #111111;
 			font-size: 18px;
@@ -354,13 +378,16 @@
 			margin-bottom: undefined
 		}
 
-		.bee-row-2 .bee-col-2 .bee-block-1 h1,
+		.bee-row-1 .bee-col-2 .bee-block-1 li {
+			padding-right: 30px;
+			padding-top: 25px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-1 h1,
 		.bee-row-3 .bee-col-1 .bee-block-1 h1,
-		.bee-row-4 .bee-col-1 .bee-block-1 h1,
-		.bee-row-5 .bee-col-1 .bee-block-1 h1,
-		.bee-row-6 .bee-col-1 .bee-block-1 h1,
 		.bee-row-7 .bee-col-1 .bee-block-1 h1,
-		.bee-row-8 .bee-col-1 .bee-block-1 h1 {
+		.bee-row-8 .bee-col-1 .bee-block-1 h1,
+		.bee-row-9 .bee-col-1 .bee-block-1 h1 {
 			color: #7747FF;
 			direction: ltr;
 			font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
@@ -369,6 +396,50 @@
 			letter-spacing: normal;
 			line-height: 120%;
 			text-align: left
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-1 {
+			color: #101112;
+			direction: ltr;
+			font-size: 17px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-1 a,
+		.bee-row-6 .bee-col-1 .bee-block-2 a {
+			color: #7747FF
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-1 p:not(:last-child) {
+			margin-bottom: 16px
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-1 h1 {
+			color: #7747FF;
+			direction: ltr;
+			font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+			font-size: 22px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-2 {
+			color: #101112;
+			direction: ltr;
+			font-size: 17px;
+			font-weight: 400;
+			letter-spacing: 1px;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-2 p:not(:last-child) {
+			margin-bottom: 19px
 		}
 
 		.bee-row-2 .bee-col-1 .bee-block-4 div {
@@ -388,30 +459,25 @@
 			width: auto
 		}
 
-		.bee-row-1 .bee-col-2 .bee-block-1 li {
-			padding-right: 30px;
-			padding-top: 25px
-		}
-
-		.bee-row-11 .bee-col-1 .bee-block-1 .bee-icon-image {
+		.bee-row-13 .bee-col-1 .bee-block-1 .bee-icon-image {
 			padding: 5px 6px 5px 5px
 		}
 
-		.bee-row-11 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+		.bee-row-13 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
 			margin-left: 0
 		}
 
-		.bee-row-11 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+		.bee-row-13 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
 			margin-right: 0
 		}
 
-		.bee-row-9 .bee-col-1 .bee-block-1 li {
+		.bee-row-11 .bee-col-1 .bee-block-1 li {
 			padding-bottom: 5px;
 			padding-right: 15px;
 			padding-top: 5px
 		}
 
-		.bee-row-9 .bee-col-1 .bee-block-1 li a {
+		.bee-row-11 .bee-col-1 .bee-block-1 li a {
 			color: #ffffff
 		}
 
@@ -453,7 +519,7 @@
 			}
 
 			.bee-row-1 .bee-col-2 .bee-block-1 .bee-hamburger-controls span,
-			.bee-row-9 .bee-col-1 .bee-block-1 .bee-hamburger-controls span {
+			.bee-row-11 .bee-col-1 .bee-block-1 .bee-hamburger-controls span {
 				width: 18px;
 				height: 18px
 			}
@@ -485,34 +551,34 @@
 				transform: translate(-50%, -50%) scaleY(1)
 			}
 
-			.bee-row-9 .bee-col-1 .bee-block-1,
-			.bee-row-9 .bee-col-1 .bee-block-2 {
+			.bee-row-11 .bee-col-1 .bee-block-1,
+			.bee-row-11 .bee-col-1 .bee-block-2 {
 				text-align: left !important
 			}
 
-			.bee-row-9 .bee-col-1 .bee-block-1 .bee-hamburger-controls {
+			.bee-row-11 .bee-col-1 .bee-block-1 .bee-hamburger-controls {
 				width: 36px;
 				height: 36px;
 				background-color: #000000;
 				border-radius: 0
 			}
 
-			.bee-row-9 .bee-col-1 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-open {
+			.bee-row-11 .bee-col-1 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-open {
 				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgd2lkdGg9IjY0IiB5PSI1MiIvPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiIHk9IjI2Ii8+PC9nPjwvc3ZnPg==");
 				transform: translate(-50%, -50%) scaleY(1)
 			}
 
-			.bee-row-9 .bee-col-1 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-close {
+			.bee-row-11 .bee-col-1 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-close {
 				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB0cmFuc2Zvcm09Im1hdHJpeCgtLjcwNzEwNjc4IC0uNzA3MTA2NzggLjcwNzEwNjc4IC0uNzA3MTA2NzggMzEuOTkxMzc4IDc3LjIzNDAxOSkiIHdpZHRoPSI4MiIgeD0iLTkuMDA4NjIyIiB5PSIyNS45OTEzNzgiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgdHJhbnNmb3JtPSJtYXRyaXgoLS43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAtLjcwNzEwNjc4IDc3LjgxOTgwNiAzMi4yMzQwMTkpIiB3aWR0aD0iODIiIHg9Ii04Ljc2NTk4MSIgeT0iMjYuMjM0MDE5Ii8+PC9nPjwvc3ZnPg==");
 				transform: translate(-50%, -50%) scaleY(0)
 			}
 
-			.bee-row-9 .bee-col-1 .bee-block-1 ul.with-bee-hamburger {
+			.bee-row-11 .bee-col-1 .bee-block-1 ul.with-bee-hamburger {
 				background-color: #000000
 			}
 
-			.bee-row-9 .bee-col-1 .bee-block-1 ul.with-bee-hamburger li,
-			.bee-row-9 .bee-col-1 .bee-block-1 ul.with-bee-hamburger li a {
+			.bee-row-11 .bee-col-1 .bee-block-1 ul.with-bee-hamburger li,
+			.bee-row-11 .bee-col-1 .bee-block-1 ul.with-bee-hamburger li a {
 				color: #ffffff
 			}
 		}
@@ -524,7 +590,7 @@
 <div class="bee-row-content no_stack">
 <div class="bee-col bee-col-1 bee-col-w6">
 <div class="bee-block bee-block-1 bee-heading">
-<h2><span class="tinyMce-placeholder">LOGO</span> </h2>
+<h2><span class="tinyMce-placeholder"></span> </h2>
 </div>
 </div>
 <div class="bee-col bee-col-2 bee-col-w6">
@@ -545,8 +611,11 @@
 </div>
 </div>
 <div class="bee-row bee-row-2">
+<div class="bee-background-video-container"><video autoplay="autoPlay" loop="loop" muted="muted" playsinline="playsInline">
+<source src="https://38ebb30c27.imgdist.com/pub/bfra/l7nxlb5c/fyf/ug1/m7a/agriculture.mp4" type="video/mp4"/>
+</video></div>
 <div class="bee-row-content">
-<div class="bee-col bee-col-1 bee-col-w5">
+<div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-heading">
 <h1><span class="tinyMce-placeholder">R & R<br/>Sustainable<br/>Solutions Pvt Ltd.<br/></span> </h1>
 </div>
@@ -554,15 +623,10 @@
 <div class="center bee-separator" style="border-top:1px solid #0B4341;width:95%;"></div>
 </div>
 <div class="bee-block bee-block-3 bee-paragraph">
-<p style="word-break: break-word;"><span>more lines......</span></p>
+<p>Our primary objective is to lead the transition toward sustainable energy systems </p>
 </div>
 <div class="bee-block bee-block-4 bee-button">
 <div class="bee-button-content" style="font-size: 16px; display: inline-block;"><span style="word-break: break-word; font-size: 16px; line-height: 200%;"><strong style="font-size: 16px;"><span style="font-size: 16px;">About Us</span></strong></span></div>
-</div>
-</div>
-<div class="bee-col bee-col-2 bee-col-w7">
-<div class="bee-block bee-block-1 bee-heading">
-<h1><span class="tinyMce-placeholder"></span> </h1>
 </div>
 </div>
 </div>
@@ -578,9 +642,18 @@
 </div>
 <div class="bee-row bee-row-4">
 <div class="bee-row-content">
-<div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-heading">
-<h1><span class="tinyMce-placeholder"> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></span> </h1>
+<div class="bee-col bee-col-1 bee-col-w6">
+<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/stubble.jpg" style="max-width:455px;"/></div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w6">
+<div class="bee-block bee-block-1 bee-paragraph">
+<p><strong>Our Objective</strong></p>
+<p>Our primary objective is to lead the transition toward sustainable energy systems by:</p>
+<p><strong>Reducing Pollution:</strong> Eliminating the harmful practice of stubble burning that contributes to air pollution and climate change.</p>
+<p><strong>Promoting Renewable Energy:</strong> Producing bio-gas and bio-fuel that reduce dependence on non-renewable energy sources.</p>
+<p><strong>Enhancing Rural Livelihoods:</strong> Creating economic opportunities for farmers through the collection and sale of agricultural residues.</p>
+<p><strong>Supporting a Circular Economy:</strong> Maximizing resource efficiency by turning waste into valuable energy products.</p>
+<p><strong>Championing Sustainability:</strong> Promoting environmentally responsible practices in agriculture and energy production.</p>
 </div>
 </div>
 </div>
@@ -588,17 +661,24 @@
 <div class="bee-row bee-row-5">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-heading">
-<h1><span class="tinyMce-placeholder"></span> </h1>
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:30px;"></div>
 </div>
 </div>
 </div>
 </div>
 <div class="bee-row bee-row-6">
-<div class="bee-row-content">
+<div class="bee-row-content" style="gap:10px;">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-heading">
-<h1><span class="tinyMce-placeholder"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></span> </h1>
+<h1><span class="tinyMce-placeholder" style="color: #000000;"><strong>Why Choose Us?</strong></span> </h1>
+</div>
+<div class="bee-block bee-block-2 bee-paragraph">
+<p><strong>Sustainability-Focused:</strong> We are a purpose-driven company that prioritizes the environment and long-term ecological balance.</p>
+<p><strong>Farmer-Centric:</strong> Our initiatives are designed to benefit the agricultural community, fostering trust and collaboration.</p>
+<p><strong>Innovative Processes:</strong> We leverage cutting-edge technology to ensure efficiency and effectiveness in every stage of production.</p>
+<p><strong>Global Impact:</strong> Our work contributes to multiple Sustainable Development Goals (SDGs), including affordable and clean energy, climate action, and sustainable cities and communities.</p>
+<p>Through our unwavering commitment to innovation, sustainability, and community empowerment, we aim to redefine the role of agriculture in energy production. By turning stubble into a valuable resource, we are not only reducing waste but also paving the way for a cleaner, healthier planet.</p>
 </div>
 </div>
 </div>
@@ -616,12 +696,30 @@
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-heading">
-<h1><span class="tinyMce-placeholder"></span> </h1>
+<h1><span class="tinyMce-placeholder"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></span> </h1>
 </div>
 </div>
 </div>
 </div>
 <div class="bee-row bee-row-9">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-heading">
+<h1><span class="tinyMce-placeholder"></span> </h1>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-10">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-heading">
+<h1><span class="tinyMce-placeholder"></span> </h1>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-11">
 <div class="bee-row-content reverse">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-menu">
@@ -640,7 +738,7 @@
 </div>
 </div>
 </div>
-<div class="bee-row bee-row-10">
+<div class="bee-row bee-row-12">
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-divider">
@@ -648,8 +746,7 @@
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </div>
 </div>
 </div>
